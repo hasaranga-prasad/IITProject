@@ -20,6 +20,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
+import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -195,6 +196,29 @@ public class UserServiceImpl implements UserService {
         logger.info("User {} logged in successfully.", userDTO.getUsername());
 
         return response;
+    }
+
+
+
+    @Override
+    public UserResponseDTO getMyInfo(String userId) {
+        UserResponseDTO userResponseDTO = new UserResponseDTO();
+        try {
+            Optional<User> userOptional = userRepo.findByUsername(userId);
+            if (userOptional.isPresent()) {
+                userResponseDTO.setUser(userOptional.get());
+                userResponseDTO.setStatusCode(200);
+                userResponseDTO.setMessage("Successful");
+            } else {
+                userResponseDTO.setStatusCode(404);
+                userResponseDTO.setMessage("User not found for update");
+            }
+        } catch (Exception e) {
+            userResponseDTO.setStatusCode(500);
+            userResponseDTO.setMessage("Error occurred while getting user info: " + e.getMessage());
+        }
+        return userResponseDTO;
+
     }
 
 }

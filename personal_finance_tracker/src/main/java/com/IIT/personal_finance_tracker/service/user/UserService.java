@@ -7,4 +7,5 @@ public interface UserService {
     UserResponseDTO createUser(UserDTO userDTO);
     UserResponseDTO refreshToken(UserResponseDTO userResponseDTO);
     UserResponseDTO login(UserDTO userDTO);
+    UserResponseDTO getMyInfo (String username);
 }
