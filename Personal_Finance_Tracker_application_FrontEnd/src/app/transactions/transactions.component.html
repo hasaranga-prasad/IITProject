@@ -1,0 +1,80 @@
+<div class="container">
+    <div *ngIf="errorMessage" class="error-message">
+      <p>{{ errorMessage }}</p>
+    </div>
+  
+    <table class="transactions-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Amount</th>
+          <th>Description</th>
+          <th>Date</th>
+          <th>Type</th>
+          <th>Category</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let transaction of paginatedTransactions">
+          <td>{{ transaction.id }}</td>
+          <td>{{ transaction.amount | currency }}</td>
+          <td>{{ transaction.description }}</td>
+          <td>{{ transaction.transactionDate | date: 'shortDate' }}</td>
+          <td>{{ transaction.type }}</td>
+          <td>{{ transaction.category.name }}</td>
+          <td>
+            <button (click)="onEdit(transaction)">Edit</button>
+            <button (click)="onDelete(transaction.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <div class="pagination-controls">
+      <label for="itemsPerPage">Items per page:</label>
+      <select id="itemsPerPage" [(ngModel)]="itemsPerPage" (change)="onItemsPerPageChange(itemsPerPage)">
+        <option [value]="5">5</option>
+        <option [value]="10">10</option>
+        <option [value]="15">15</option>
+      </select>
+  
+      <button (click)="onPageChange(1)" [disabled]="currentPage === 1">First</button>
+      <button (click)="onPageChange(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+      <span>Page {{ currentPage }} of {{ totalPages }}</span>
+      <button (click)="onPageChange(currentPage + 1)" [disabled]="currentPage >= totalPages">Next</button>
+      <button (click)="onPageChange(totalPages)" [disabled]="currentPage >= totalPages">Last</button>
+    </div>
+  
+    <div class="dialog" [ngClass]="{'is-active': dialogVisible}">
+        <div class="dialog-content">
+          <div *ngIf="transaction1">
+            <h3>Edit Transaction</h3>
+            <form (ngSubmit)="onSave()">
+              <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input id="amount" type="number" [(ngModel)]="transaction1.amount" name="amount" required />
+              </div>
+              <div class="form-group">
+                <label for="description">Description:</label>
+                <input id="description" type="text" [(ngModel)]="transaction1.description" name="description" required />
+              </div>
+              <div class="form-group">
+                <label for="transactionDate">Date:</label>
+                <input id="transactionDate" type="date" [(ngModel)]="transaction1.transactionDate" name="transactionDate" required />
+              </div>
+              <div class="form-group">
+                <label for="type">Type:</label>
+                <input id="type" type="text" [(ngModel)]="transaction1.type" name="type" required />
+              </div>
+              <div class="form-group">
+                <label for="category">Category:</label>
+                <input id="category" type="text" [(ngModel)]="transaction1.category.name" name="category" required />
+              </div>
+              <button type="submit" class="dialog-save">Save</button>
+            </form>
+          </div>
+          <button class="dialog-close" (click)="onCloseDialog()">Close</button>
+        </div>
+      </div>
+      

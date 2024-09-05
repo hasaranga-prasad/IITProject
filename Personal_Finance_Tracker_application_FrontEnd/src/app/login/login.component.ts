@@ -52,5 +52,7 @@ export class LoginComponent {
       this.errorMessage = ''
     }, 3000)
   }
-
+  goToRegister() {
+    this.router.navigate(['/register']);
+  }
 }

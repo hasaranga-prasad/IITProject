@@ -1,23 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { CurrencyPipe, DatePipe } from '@angular/common';  // Import CurrencyPipe and DatePipe
-import { CommonModule } from '@angular/common';  // Import CommonModule
+import { CurrencyPipe, DatePipe } from '@angular/common';  
+import { CommonModule } from '@angular/common';  
+import { FormsModule } from '@angular/forms';  // Import FormsModule
 import { UsersService } from '../users.service';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, CurrencyPipe, DatePipe],  // Add CommonModule to imports
+  imports: [CommonModule, FormsModule, CurrencyPipe, DatePipe],  // Add FormsModule to imports
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+  transactions: any[] = [];
   amountOfIncome: number = 0;
   amountOfExpense: number = 0;
   errorMessage: string = '';
   visible: boolean = false;
-  transactions: any[] = [];
-  transaction1: any = null;
+  transaction1: any;
+
+  currentPage: number = 1;
+  itemsPerPage: number = 5; 
+  totalItems: number = 0;
 
   constructor(
     private readonly userService: UsersService,
@@ -32,25 +37,45 @@ export class DashboardComponent implements OnInit {
     try {
       const token: string | null = localStorage.getItem('token');
       if (token) {
-        const response = await this.userService.getAllTransaction(token) 
+        const response = await this.userService.getAllTransaction(token);
         if (response && response.statusCode === 200) {
           this.transactions = response.transactionList;
           this.amountOfIncome = response.amountofIncome;
           this.amountOfExpense = response.amountofExpense;
+          this.totalItems = parseInt(response.size, 10); // Parse size as an integer
         } else {
-          this.errorMessage = 'No transactions found.';
+          console.log('No transactions found.');
         }
       } else {
-        this.errorMessage = 'Token is missing.';
+        console.log('Token is missing.');
       }
     } catch (error: any) {
-      this.errorMessage = error.message || 'An error occurred while fetching transactions.';
+      console.log(error.message || 'An error occurred while fetching transactions.');
     }
+  }
+
+  get paginatedTransactions() {
+    const start = (this.currentPage - 1) * this.itemsPerPage;
+    const end = start + this.itemsPerPage;
+    return this.transactions.slice(start, end);
   }
 
   onView(transactionId: string) {
     localStorage.setItem('selectedTransactionId', transactionId);
     this.showDialog();
+  }
+
+  get totalPages(): number {
+    return Math.ceil(this.totalItems / this.itemsPerPage);
+  }
+
+  onPageChange(page: number) {
+    this.currentPage = page;
+  }
+
+  onItemsPerPageChange(items: number) {
+    this.itemsPerPage = items;
+    this.currentPage = 1; // Reset to first page
   }
 
   showDialog() {

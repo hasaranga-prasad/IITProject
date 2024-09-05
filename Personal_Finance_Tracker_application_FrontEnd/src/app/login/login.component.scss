@@ -54,4 +54,25 @@
     margin: 10px;
     text-align: center;
     }
+    .logo {
+        margin-bottom: 20px;
+    }
     
+    .logo img {
+        width: 100px; 
+        height: auto; 
+        display: block;
+        margin: 0 auto; 
+    }
+    .create-account {
+        margin-top: 20px;
+    }
+    
+    .create-account a {
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    .create-account a:hover {
+        text-decoration: underline;
+    }

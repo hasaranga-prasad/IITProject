@@ -24,21 +24,40 @@ export class UsersService {
   }
  
 
-  async register(userData:any, token:string):Promise<any>{
+  async register(userData:any):Promise<any>{
     const url = `${this.BASE_URL}/auth/register`;
-    const headers = new HttpHeaders({
-      'Authorization': `Bearer ${token}`
-    })
-    try{
-      const response =  this.http.post<any>(url, userData, {headers}).toPromise()
+   try{
+      const response =  this.http.post<any>(url, userData).toPromise()
       return response;
     }catch(error){
       throw error;
     }
   }
 
-  
-
+  async deleteTransaction(id: string, token:string):Promise<any>{
+    const url = `${this.BASE_URL}/user/transactions/delete/${id}`;
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    })
+    try{
+      const response =  this.http.delete<any>(url, {headers}).toPromise()
+      return response;
+    }catch(error){
+      throw error;
+    }
+  }
+  async updateTransaction(id: string, userData: any, token:string):Promise<any>{
+    const url = `${this.BASE_URL}/user/transactions/update/${id}`;
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    })
+    try{
+      const response =  this.http.put<any>(url, userData, {headers}).toPromise()
+      return response;
+    }catch(error){
+      throw error;
+    }
+  }
   async getYourProfile(token:string):Promise<any>{
     const url = `${this.BASE_URL}/auth/get-profile`;
     const headers = new HttpHeaders({

@@ -9,6 +9,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Data
@@ -28,7 +29,7 @@ public class Transaction {
     private String description;
 
     @Column(nullable = false)
-    private LocalDateTime transactionDate;
+    private LocalDate transactionDate;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)

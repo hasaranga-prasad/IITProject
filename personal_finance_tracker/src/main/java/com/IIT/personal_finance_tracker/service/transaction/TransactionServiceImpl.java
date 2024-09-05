@@ -117,13 +117,25 @@ public class TransactionServiceImpl implements TransactionService {
             if (transactionOptional.isPresent()) {
                 Transaction transaction = transactionOptional.get();
 
-                // Update fields with new data
+                // Update amount if provided and valid
                 if (transactionDTO.getAmount() != null && transactionDTO.getAmount().compareTo(BigDecimal.ZERO) > 0) {
                     transaction.setAmount(transactionDTO.getAmount());
                 }
 
+                // Update description if provided and valid
                 if (transactionDTO.getDescription() != null && !transactionDTO.getDescription().trim().isEmpty()) {
                     transaction.setDescription(transactionDTO.getDescription());
+                }
+
+                // Update transaction date if provided
+                if (transactionDTO.getTransactionDate() != null) {
+                    logger.info("Updating transaction date from {} to {}", transaction.getTransactionDate(), transactionDTO.getTransactionDate());
+                    transaction.setTransactionDate(transactionDTO.getTransactionDate());
+                }
+
+                // Update type if provided
+                if (transactionDTO.getType() != null) {
+                    transaction.setType(transactionDTO.getType());
                 }
 
                 // Validate and update the category if changed
@@ -156,12 +168,12 @@ public class TransactionServiceImpl implements TransactionService {
                 response.setMessage("The specified transaction does not exist.");
             }
         } catch (DataIntegrityViolationException e) {
-            logger.error("Database error occurred while updating transaction: {}", e.getMessage());
+            logger.error("Database error occurred while updating transaction: {}", e.getMessage(), e);
             response.setStatusCode(500);
             response.setError("Database error");
             response.setMessage("A database error occurred while updating the transaction.");
         } catch (Exception e) {
-            logger.error("Unexpected error occurred while updating transaction: {}", e.getMessage());
+            logger.error("Unexpected error occurred while updating transaction: {}", e.getMessage(), e);
             response.setStatusCode(500);
             response.setError("Server error");
             response.setMessage("An unexpected error occurred while updating the transaction.");
@@ -169,6 +181,7 @@ public class TransactionServiceImpl implements TransactionService {
 
         return response;
     }
+
 
     @Override
     public TransactionResponseDTO deleteTransaction(Long id) {
@@ -211,16 +224,17 @@ public class TransactionServiceImpl implements TransactionService {
         logger.info("Fetching all transactions");
         TransactionResponseDTO response = new TransactionResponseDTO();
 
-
         try {
             List<Transaction> transactions = transactionRepo.findAll();
             BigDecimal totalIncome = transactionRepo.getTotalIncome();
             BigDecimal totalExpense = transactionRepo.getTotalExpense();
+
             if (!transactions.isEmpty()) {
                 response.setStatusCode(200);
                 response.setTransactionList(transactions);
-                response.setAmountofIncome(totalIncome);
-                response.setAmountofExpense(totalExpense);
+                response.setAmountofIncome(totalIncome != null ? totalIncome : BigDecimal.ZERO);
+                response.setAmountofExpense(totalExpense != null ? totalExpense : BigDecimal.ZERO);
+                response.setSize(String.valueOf(transactions.size()));  // Convert int to String
                 logger.info("Found {} transactions", transactions.size());
             } else {
                 logger.warn("No transactions found");
@@ -229,17 +243,21 @@ public class TransactionServiceImpl implements TransactionService {
                 response.setMessage("There are no transactions available.");
                 response.setAmountofIncome(BigDecimal.ZERO);
                 response.setAmountofExpense(BigDecimal.ZERO);
+                response.setSize("0");  // Set size to "0" if no transactions found
             }
         } catch (Exception e) {
-            logger.error("Unexpected error occurred while fetching transactions: {}", e.getMessage());
+            logger.error("Unexpected error occurred while fetching transactions: {}", e.getMessage(), e);
             response.setStatusCode(500);
             response.setError("Server error");
             response.setMessage("An unexpected error occurred while fetching the transactions.");
             response.setAmountofIncome(BigDecimal.ZERO);
             response.setAmountofExpense(BigDecimal.ZERO);
+            response.setSize("0");  // Set size to "0" on error
         }
 
         return response;
     }
+
+
 
 }

@@ -4,22 +4,19 @@ import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { UsersService } from '../users.service';
 
-
-
 @Component({
   selector: 'app-register',
   standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './register.component.html',
-  styleUrl: './register.component.scss'
+  styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
   formData: any = {
-    name: '',
+    username: '',
     email: '',
     password: '',
-    role: '',
-    city: ''
+    confirmPassword: ''
   };
   errorMessage: string = '';
 
@@ -29,10 +26,15 @@ export class RegisterComponent {
   ) { }
 
   async handleSubmit() {
-
-    // Check if all fields are not empty
-    if (!this.formData.name || !this.formData.email || !this.formData.password || !this.formData.role || !this.formData.city) {
+    // Check if all fields are filled
+    if (!this.formData.username || !this.formData.email || !this.formData.password || !this.formData.confirmPassword) {
       this.showError('Please fill in all fields.');
+      return;
+    }
+
+    // Check if passwords match
+    if (this.formData.password !== this.formData.confirmPassword) {
+      this.showError('Passwords do not match.');
       return;
     }
 
@@ -43,20 +45,36 @@ export class RegisterComponent {
     }
 
     try {
-      const token = localStorage.getItem('token');
-      if (!token) {
-        throw new Error('No token found');
-      }
-
-      const response = await this.userService.register(this.formData, token);
+      const response = await this.userService.register(this.formData);
       if (response.statusCode === 200) {
-        this.router.navigate(['/users']);
+        // Clear form fields
+        this.formData = {
+          username: '',
+          email: '',
+          password: '',
+          confirmPassword: ''
+        };
+
+        // Navigate to login page
+        this.router.navigate(['/login']).then(() => {
+          console.log('Navigation to login successful');
+        }).catch(error => {
+          console.error('Navigation error:', error);
+        });
       } else {
         this.showError(response.message);
       }
     } catch (error: any) {
-      this.showError(error.message);
+      this.showError(error.message || 'An error occurred during registration.');
     }
+  }
+
+  navigateToLogin() {
+    this.router.navigate(['/login']).then(() => {
+      console.log('Navigation to login successful');
+    }).catch(error => {
+      console.error('Navigation error:', error);
+    });
   }
 
   showError(message: string) {
@@ -66,4 +84,3 @@ export class RegisterComponent {
     }, 3000);
   }
 }
-

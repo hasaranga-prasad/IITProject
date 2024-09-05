@@ -21,6 +21,7 @@ public class TransactionResponseDTO {
     private int statusCode;
     private String error;
     private String message;
+    private String Size;
     private BigDecimal amountofIncome;
     private BigDecimal amountofExpense;
     private Transaction transaction;

@@ -31,10 +31,11 @@
     border-radius: 5px;
     }
     
-    button[type="submit"] {
+    button[type="submit"],[type="button"] {
     display: block;
     width: 100%;
     padding: 10px;
+    margin-bottom: 4px;
     font-size: 20px;
     color: #fff;
     background-color: #007bff;
@@ -44,7 +45,7 @@
     transition: background-color 0.3s ease;
     }
     
-    button[type="submit"]:hover {
+    button[type="submit"] :hover {
     background-color: #0056b3;
     }
     
