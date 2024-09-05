@@ -4,6 +4,7 @@ import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 
 import { usersGuard} from './users.guard';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -11,6 +12,7 @@ export const routes: Routes = [
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent, canActivate: [usersGuard]},
     {path: 'profile', component: ProfileComponent, canActivate: [usersGuard]},
+    {path: 'dashboard', component:DashboardComponent, canActivate: [usersGuard]},
   
     {path: '**', component: LoginComponent},
     {path: '', redirectTo: '/login', pathMatch: 'full'},

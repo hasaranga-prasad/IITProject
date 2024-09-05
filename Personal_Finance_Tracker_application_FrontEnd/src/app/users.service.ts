@@ -55,7 +55,44 @@ export class UsersService {
   
 
  
+  async getTransactionById(Id: string, token:string):Promise<any>{
+    const url = `${this.BASE_URL}/user/transactions/${Id}`;
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    })
+    try{
+      const response =  this.http.get<any>(url, {headers}).toPromise()
+      return response;
+    }catch(error){
+      throw error;
+    }
+  }
+  async getAllTransaction(token: string): Promise<any> {
+    const url = `${this.BASE_URL}/user/transactions/all`;
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${token}`,
+    });
 
+    try {
+      const response = await this.http.get<any>(url, { headers }).toPromise();
+      return response;
+    } catch (error) {
+      throw error;
+    }
+  }
+  async getAllCategory(token: string): Promise<any> {
+    const url = `${this.BASE_URL}/user/category/all`;
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${token}`,
+    });
+
+    try {
+      const response = await this.http.get<any>(url, { headers }).toPromise();
+      return response;
+    } catch (error) {
+      throw error;
+    }
+  }
  
 
   /***AUTHEMNTICATION METHODS */

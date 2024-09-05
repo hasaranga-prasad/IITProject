@@ -36,7 +36,7 @@ export class LoginComponent {
       if(response.statusCode == 200){
         localStorage.setItem('token', response.token)
         localStorage.setItem('role', response.role)
-        this.router.navigate(['/profile'])
+        this.router.navigate(['/dashboard'])
       }else{
         this.showError(response.message)
       }
