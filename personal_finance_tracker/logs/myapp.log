@@ -963,3 +963,601 @@ io.jsonwebtoken.ExpiredJwtException: JWT expired 386808565 milliseconds ago at 2
 2024-09-06T03:45:25.459+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
 2024-09-06T03:45:25.514+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
 2024-09-06T03:45:25.555+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 2 transactions
+2024-09-06T08:28:42.129+05:30  WARN 30700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h22m16s132ms370µs600ns).
+2024-09-06T09:22:11.502+05:30  WARN 30700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m29s262ms404µs).
+2024-09-06T10:09:20.667+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T10:09:20.691+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 2 transactions
+2024-09-06T10:28:08.903+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.service.user.UserServiceImpl       : User john_doe12 logged in successfully.
+2024-09-06T10:28:08.996+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T10:28:09.038+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 2 transactions
+2024-09-06T10:28:12.636+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching transaction with ID: 3
+2024-09-06T10:28:12.652+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Transaction found with ID: 3
+2024-09-06T10:28:17.347+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T10:28:17.363+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 2 transactions
+2024-09-06T10:28:22.702+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T10:28:22.722+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 2 transactions
+2024-09-06T10:28:24.267+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T10:28:24.282+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 2 transactions
+2024-09-06T10:28:27.090+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T10:28:27.115+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 2 transactions
+2024-09-06T10:28:37.599+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T10:28:37.623+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 2 transactions
+2024-09-06T10:28:39.424+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T10:28:39.439+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 2 transactions
+2024-09-06T10:29:05.047+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Deleting transaction with ID: 3
+2024-09-06T10:29:05.132+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Transaction deleted successfully with ID: 3
+2024-09-06T10:29:05.142+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T10:29:05.156+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T10:29:27.173+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T10:29:27.180+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-01 to 2024-09-01
+2024-09-06T10:29:27.213+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T10:29:27.240+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T10:29:27.256+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T10:29:33.689+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T10:29:33.690+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-01 to 2024-09-01
+2024-09-06T10:29:33.698+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T10:29:33.711+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T10:29:33.728+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:14:44.900+05:30  WARN 30700 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m1s269ms814µs500ns).
+2024-09-06T11:14:54.710+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:14:54.724+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:19:26.531+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:19:26.547+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:20:43.867+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:20:43.899+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:21:24.793+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:21:24.808+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:21:39.610+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T11:21:39.618+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-01 to 2024-09-01
+2024-09-06T11:21:39.621+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T11:21:39.635+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:21:39.646+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:21:43.225+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T11:21:43.244+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-01 to 2024-09-01
+2024-09-06T11:21:43.246+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T11:21:43.264+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:21:43.273+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:21:58.268+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T11:21:58.273+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-01 to 2024-09-01
+2024-09-06T11:21:58.276+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T11:21:58.290+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:21:58.290+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:22:47.660+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T11:22:47.666+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-01 to 2024-09-01
+2024-09-06T11:22:47.670+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T11:22:47.671+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:22:47.693+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:23:48.087+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:23:48.104+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:23:59.738+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T11:23:59.743+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-01 to 2024-09-01
+2024-09-06T11:23:59.753+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T11:23:59.782+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:23:59.793+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:24:03.986+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T11:24:03.991+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-01 to 2024-09-01
+2024-09-06T11:24:04.018+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T11:24:04.034+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:24:04.046+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:26:56.078+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:26:56.087+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:27:09.990+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T11:27:09.995+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-01 to 2024-09-01
+2024-09-06T11:27:10.000+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T11:27:10.027+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:27:10.038+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:27:13.947+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T11:27:13.952+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-01 to 2024-09-01
+2024-09-06T11:27:13.971+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T11:27:13.986+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:27:13.989+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:36:58.107+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:36:58.116+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T11:37:24.269+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.service.user.UserServiceImpl       : Starting user creation process for username: john_doe11
+2024-09-06T11:37:24.275+05:30  WARN 30700 --- [http-nio-8080-exec-6] c.I.p.service.user.UserServiceImpl       : Username already exists: john_doe11
+2024-09-06T11:37:34.554+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.service.user.UserServiceImpl       : Starting user creation process for username: john_doe1
+2024-09-06T11:37:34.554+05:30  WARN 30700 --- [http-nio-8080-exec-8] c.I.p.service.user.UserServiceImpl       : Username already exists: john_doe1
+2024-09-06T11:37:41.614+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.service.user.UserServiceImpl       : Starting user creation process for username: john_doe1
+2024-09-06T11:37:41.614+05:30  WARN 30700 --- [http-nio-8080-exec-7] c.I.p.service.user.UserServiceImpl       : Username already exists: john_doe1
+2024-09-06T11:37:59.230+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:37:59.847+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 6
+2024-09-06T11:38:01.814+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:38:01.846+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 7
+2024-09-06T11:38:02.640+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:38:02.649+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 8
+2024-09-06T11:38:03.388+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:38:03.403+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 9
+2024-09-06T11:38:04.230+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:38:04.250+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 10
+2024-09-06T11:38:04.912+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:38:04.914+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 11
+2024-09-06T11:38:05.646+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:38:05.649+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 12
+2024-09-06T11:38:06.431+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:38:06.447+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 13
+2024-09-06T11:38:07.306+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:38:07.325+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 14
+2024-09-06T11:38:07.930+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:38:07.953+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 15
+2024-09-06T11:38:08.652+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:38:08.664+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 16
+2024-09-06T11:38:09.433+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:38:09.465+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 17
+2024-09-06T11:38:10.291+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: Grocery shopping
+2024-09-06T11:38:10.296+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 18
+2024-09-06T11:38:13.449+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:38:13.466+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T11:38:27.074+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 6
+2024-09-06T11:38:27.080+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-06 to 2024-05-15
+2024-09-06T11:38:27.094+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 6
+2024-09-06T11:38:27.101+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:38:27.121+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T11:38:41.300+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 7
+2024-09-06T11:38:41.304+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-06 to 2024-05-06
+2024-09-06T11:38:41.317+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 7
+2024-09-06T11:38:41.330+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:38:41.338+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T11:41:52.992+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:41:53.001+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T11:45:54.811+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:45:54.823+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T11:46:10.015+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:46:10.025+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T11:48:16.092+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:48:16.104+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T11:50:02.621+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:50:02.639+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T11:51:16.947+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:51:16.959+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T11:53:43.612+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:53:43.626+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T11:56:34.074+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:56:34.087+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T11:56:47.176+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T11:56:47.186+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:09:31.950+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:09:31.965+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:11:22.002+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:11:22.002+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:13:11.317+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 6
+2024-09-06T12:13:11.324+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-05-15 to 2024-10-16
+2024-09-06T12:13:11.342+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 6
+2024-09-06T12:13:11.362+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:13:11.387+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:15:46.079+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:15:46.099+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:20:07.013+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:20:07.029+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:20:49.434+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:20:49.449+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:25:02.102+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:25:02.122+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:25:33.956+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:25:33.970+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:26:33.939+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:26:33.956+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:29:06.124+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:29:06.137+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:32:34.789+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:32:34.802+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:32:39.080+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:32:39.098+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:33:38.061+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:33:38.075+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:34:15.621+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:34:15.645+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:40:57.759+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:40:57.775+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:41:54.773+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:41:54.780+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:49:42.136+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:49:42.145+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:50:01.294+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:50:01.301+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:50:28.768+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:50:28.780+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:51:43.005+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:51:43.018+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:52:22.441+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:52:22.453+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:52:33.170+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:52:33.178+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:52:41.777+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:52:41.788+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:53:12.218+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:53:12.252+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:53:24.904+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:53:24.917+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:54:00.829+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T12:54:00.836+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-01 to 2024-09-27
+2024-09-06T12:54:00.859+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T12:54:00.875+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:54:00.891+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:54:16.453+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:54:16.462+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:56:49.689+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:56:49.701+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:57:12.066+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:57:12.075+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:57:42.009+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:57:42.017+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:58:20.498+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 7
+2024-09-06T12:58:20.504+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-05-06 to 2024-05-06
+2024-09-06T12:58:20.518+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 7
+2024-09-06T12:58:20.544+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:58:20.559+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:58:34.670+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 7
+2024-09-06T12:58:34.678+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-05-06 to 2024-05-06
+2024-09-06T12:58:34.682+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 7
+2024-09-06T12:58:34.696+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:58:34.702+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T12:58:46.429+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 7
+2024-09-06T12:58:46.433+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-05-06 to 2024-05-06
+2024-09-06T12:58:46.448+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 7
+2024-09-06T12:58:46.452+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T12:58:46.468+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T13:01:33.763+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T13:01:33.773+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T13:01:55.845+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T13:01:55.859+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T13:02:38.635+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T13:02:38.640+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-27 to 2024-09-27
+2024-09-06T13:02:38.645+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T13:02:38.663+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T13:02:38.663+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T13:06:23.763+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T13:06:23.776+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T13:07:43.715+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T13:07:43.720+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-27 to 2024-09-27
+2024-09-06T13:07:43.733+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T13:07:43.750+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T13:07:43.764+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T14:43:13.414+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:43:13.443+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T14:43:17.213+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:43:17.230+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 14 transactions
+2024-09-06T14:43:38.175+05:30  WARN 30700 --- [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.IIT.personal_finance_tracker.response.transaction.TransactionResponseDTO> com.IIT.personal_finance_tracker.controller.transaction.TransactionController.createTransaction(com.IIT.personal_finance_tracker.dto.transaction.TransactionDTO) with 4 errors: [Field error in object 'transactionDTO' on field 'amount': rejected value [0]; codes [Positive.transactionDTO.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.amount,amount]; arguments []; default message [amount]]; default message [Amount must be positive.]] [Field error in object 'transactionDTO' on field 'description': rejected value []; codes [Size.transactionDTO.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.description,description]; arguments []; default message [description],2147483647,1]; default message [Description must not be empty.]] [Field error in object 'transactionDTO' on field 'transactionDate': rejected value [null]; codes [NotNull.transactionDTO.transactionDate,NotNull.transactionDate,NotNull.java.time.LocalDate,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.transactionDate,transactionDate]; arguments []; default message [transactionDate]]; default message [Transaction date is required.]] [Field error in object 'transactionDTO' on field 'categoryId': rejected value [null]; codes [NotNull.transactionDTO.categoryId,NotNull.categoryId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.categoryId,categoryId]; arguments []; default message [categoryId]]; default message [Category ID is required.]] ]
+2024-09-06T14:43:46.442+05:30  WARN 30700 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.IIT.personal_finance_tracker.response.transaction.TransactionResponseDTO> com.IIT.personal_finance_tracker.controller.transaction.TransactionController.createTransaction(com.IIT.personal_finance_tracker.dto.transaction.TransactionDTO) with 4 errors: [Field error in object 'transactionDTO' on field 'categoryId': rejected value [null]; codes [NotNull.transactionDTO.categoryId,NotNull.categoryId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.categoryId,categoryId]; arguments []; default message [categoryId]]; default message [Category ID is required.]] [Field error in object 'transactionDTO' on field 'description': rejected value []; codes [Size.transactionDTO.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.description,description]; arguments []; default message [description],2147483647,1]; default message [Description must not be empty.]] [Field error in object 'transactionDTO' on field 'amount': rejected value [0]; codes [Positive.transactionDTO.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.amount,amount]; arguments []; default message [amount]]; default message [Amount must be positive.]] [Field error in object 'transactionDTO' on field 'transactionDate': rejected value [null]; codes [NotNull.transactionDTO.transactionDate,NotNull.transactionDate,NotNull.java.time.LocalDate,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.transactionDate,transactionDate]; arguments []; default message [transactionDate]]; default message [Transaction date is required.]] ]
+2024-09-06T14:43:47.230+05:30  WARN 30700 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.IIT.personal_finance_tracker.response.transaction.TransactionResponseDTO> com.IIT.personal_finance_tracker.controller.transaction.TransactionController.createTransaction(com.IIT.personal_finance_tracker.dto.transaction.TransactionDTO) with 4 errors: [Field error in object 'transactionDTO' on field 'description': rejected value []; codes [Size.transactionDTO.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.description,description]; arguments []; default message [description],2147483647,1]; default message [Description must not be empty.]] [Field error in object 'transactionDTO' on field 'categoryId': rejected value [null]; codes [NotNull.transactionDTO.categoryId,NotNull.categoryId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.categoryId,categoryId]; arguments []; default message [categoryId]]; default message [Category ID is required.]] [Field error in object 'transactionDTO' on field 'amount': rejected value [0]; codes [Positive.transactionDTO.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.amount,amount]; arguments []; default message [amount]]; default message [Amount must be positive.]] [Field error in object 'transactionDTO' on field 'transactionDate': rejected value [null]; codes [NotNull.transactionDTO.transactionDate,NotNull.transactionDate,NotNull.java.time.LocalDate,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.transactionDate,transactionDate]; arguments []; default message [transactionDate]]; default message [Transaction date is required.]] ]
+2024-09-06T14:43:47.567+05:30  WARN 30700 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.IIT.personal_finance_tracker.response.transaction.TransactionResponseDTO> com.IIT.personal_finance_tracker.controller.transaction.TransactionController.createTransaction(com.IIT.personal_finance_tracker.dto.transaction.TransactionDTO) with 4 errors: [Field error in object 'transactionDTO' on field 'categoryId': rejected value [null]; codes [NotNull.transactionDTO.categoryId,NotNull.categoryId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.categoryId,categoryId]; arguments []; default message [categoryId]]; default message [Category ID is required.]] [Field error in object 'transactionDTO' on field 'transactionDate': rejected value [null]; codes [NotNull.transactionDTO.transactionDate,NotNull.transactionDate,NotNull.java.time.LocalDate,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.transactionDate,transactionDate]; arguments []; default message [transactionDate]]; default message [Transaction date is required.]] [Field error in object 'transactionDTO' on field 'amount': rejected value [0]; codes [Positive.transactionDTO.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.amount,amount]; arguments []; default message [amount]]; default message [Amount must be positive.]] [Field error in object 'transactionDTO' on field 'description': rejected value []; codes [Size.transactionDTO.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.description,description]; arguments []; default message [description],2147483647,1]; default message [Description must not be empty.]] ]
+2024-09-06T14:43:56.199+05:30  WARN 30700 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.IIT.personal_finance_tracker.response.transaction.TransactionResponseDTO> com.IIT.personal_finance_tracker.controller.transaction.TransactionController.createTransaction(com.IIT.personal_finance_tracker.dto.transaction.TransactionDTO): [Field error in object 'transactionDTO' on field 'amount': rejected value [0]; codes [Positive.transactionDTO.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.amount,amount]; arguments []; default message [amount]]; default message [Amount must be positive.]] ]
+2024-09-06T14:43:57.243+05:30  WARN 30700 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.IIT.personal_finance_tracker.response.transaction.TransactionResponseDTO> com.IIT.personal_finance_tracker.controller.transaction.TransactionController.createTransaction(com.IIT.personal_finance_tracker.dto.transaction.TransactionDTO): [Field error in object 'transactionDTO' on field 'amount': rejected value [0]; codes [Positive.transactionDTO.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.amount,amount]; arguments []; default message [amount]]; default message [Amount must be positive.]] ]
+2024-09-06T14:44:01.405+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: new
+2024-09-06T14:44:01.461+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 19
+2024-09-06T14:44:01.492+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:44:01.508+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T14:44:02.639+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: new
+2024-09-06T14:44:02.665+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 20
+2024-09-06T14:44:02.682+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:44:02.682+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 16 transactions
+2024-09-06T14:44:21.108+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:44:21.124+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 16 transactions
+2024-09-06T14:45:39.547+05:30  WARN 30700 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.IIT.personal_finance_tracker.response.transaction.TransactionResponseDTO> com.IIT.personal_finance_tracker.controller.transaction.TransactionController.createTransaction(com.IIT.personal_finance_tracker.dto.transaction.TransactionDTO) with 4 errors: [Field error in object 'transactionDTO' on field 'categoryId': rejected value [null]; codes [NotNull.transactionDTO.categoryId,NotNull.categoryId,NotNull.java.lang.Long,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.categoryId,categoryId]; arguments []; default message [categoryId]]; default message [Category ID is required.]] [Field error in object 'transactionDTO' on field 'transactionDate': rejected value [null]; codes [NotNull.transactionDTO.transactionDate,NotNull.transactionDate,NotNull.java.time.LocalDate,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.transactionDate,transactionDate]; arguments []; default message [transactionDate]]; default message [Transaction date is required.]] [Field error in object 'transactionDTO' on field 'description': rejected value []; codes [Size.transactionDTO.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.description,description]; arguments []; default message [description],2147483647,1]; default message [Description must not be empty.]] [Field error in object 'transactionDTO' on field 'amount': rejected value [0]; codes [Positive.transactionDTO.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.amount,amount]; arguments []; default message [amount]]; default message [Amount must be positive.]] ]
+2024-09-06T14:45:56.262+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: new
+2024-09-06T14:45:56.288+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 21
+2024-09-06T14:45:56.306+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:45:56.315+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 17 transactions
+2024-09-06T14:46:15.338+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:46:15.365+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 17 transactions
+2024-09-06T14:47:06.278+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:47:06.287+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 17 transactions
+2024-09-06T14:47:30.054+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:47:30.057+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 17 transactions
+2024-09-06T14:48:09.278+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: new
+2024-09-06T14:48:09.307+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 22
+2024-09-06T14:48:09.323+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:48:09.336+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Found 18 transactions
+2024-09-06T14:49:14.113+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:49:14.138+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 18 transactions
+2024-09-06T14:50:08.997+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:50:09.018+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 18 transactions
+2024-09-06T14:52:03.538+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:52:03.562+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 18 transactions
+2024-09-06T14:53:36.175+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:53:36.199+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 18 transactions
+2024-09-06T14:54:28.596+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: new
+2024-09-06T14:54:28.618+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 23
+2024-09-06T14:54:28.629+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:54:28.643+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 19 transactions
+2024-09-06T14:54:35.000+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:54:35.010+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 19 transactions
+2024-09-06T14:54:53.892+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Deleting transaction with ID: 20
+2024-09-06T14:54:53.923+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Transaction deleted successfully with ID: 20
+2024-09-06T14:54:53.939+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:54:53.954+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Found 18 transactions
+2024-09-06T14:54:56.843+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Deleting transaction with ID: 21
+2024-09-06T14:54:56.858+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Transaction deleted successfully with ID: 21
+2024-09-06T14:54:56.878+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:54:56.894+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 17 transactions
+2024-09-06T14:54:59.583+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Deleting transaction with ID: 22
+2024-09-06T14:54:59.623+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Transaction deleted successfully with ID: 22
+2024-09-06T14:54:59.638+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:54:59.643+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 16 transactions
+2024-09-06T14:55:02.212+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:55:02.228+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 16 transactions
+2024-09-06T14:58:12.214+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:58:12.225+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 16 transactions
+2024-09-06T14:59:33.385+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T14:59:33.403+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 16 transactions
+2024-09-06T15:00:16.453+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:00:16.468+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 16 transactions
+2024-09-06T15:00:50.398+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 4
+2024-09-06T15:00:50.399+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-27 to 2024-09-27
+2024-09-06T15:00:50.428+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 4
+2024-09-06T15:00:50.455+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:00:50.469+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Found 16 transactions
+2024-09-06T15:01:26.332+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Deleting transaction with ID: 4
+2024-09-06T15:01:26.349+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Transaction deleted successfully with ID: 4
+2024-09-06T15:01:26.452+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:01:26.469+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:01:56.316+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:01:56.324+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:02:02.470+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:02:02.478+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:02:04.662+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:02:04.671+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:02:19.050+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:02:19.066+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:02:30.999+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:02:31.014+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:02:47.629+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 16
+2024-09-06T15:02:47.636+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-06 to 2024-09-06
+2024-09-06T15:02:47.644+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 16
+2024-09-06T15:02:47.662+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:02:47.679+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:02:50.196+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:02:50.221+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:02:56.619+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching transaction with ID: 16
+2024-09-06T15:02:56.622+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Transaction found with ID: 16
+2024-09-06T15:03:13.002+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:03:13.010+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:03:19.155+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:03:19.169+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:03:22.046+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:03:22.059+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:03:33.647+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.service.user.UserServiceImpl       : User john_doe12 logged in successfully.
+2024-09-06T15:03:33.705+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:03:33.717+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:04:32.835+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:04:32.843+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:04:35.833+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:04:35.841+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:05:46.658+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:05:46.665+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:05:50.058+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching transaction with ID: 6
+2024-09-06T15:05:50.062+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Transaction found with ID: 6
+2024-09-06T15:06:15.019+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:06:15.026+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:06:22.222+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.service.user.UserServiceImpl       : User john_doe12 logged in successfully.
+2024-09-06T15:06:22.261+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:06:22.269+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:06:25.909+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:06:25.918+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:06:35.573+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.service.user.UserServiceImpl       : User john_doe12 logged in successfully.
+2024-09-06T15:06:35.609+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:06:35.614+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:06:37.883+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:06:37.897+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:06:42.898+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:06:42.909+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:26:22.274+05:30  WARN 30700 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-09-06T15:37:32.396+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:37:32.420+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:38:18.122+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:38:18.151+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:38:30.314+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:38:30.331+05:30  INFO 30700 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:38:48.152+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:38:48.170+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:44:09.945+05:30  INFO 30700 --- [http-nio-8080-exec-7] c.I.p.service.user.UserServiceImpl       : User john_doe12 logged in successfully.
+2024-09-06T15:44:10.037+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:44:10.086+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:44:12.650+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:44:12.666+05:30  INFO 30700 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T15:44:14.664+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T15:44:14.679+05:30  INFO 30700 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T16:36:59.077+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T16:36:59.121+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T16:43:12.634+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T16:43:12.652+05:30  INFO 30700 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T16:50:47.414+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T16:50:47.431+05:30  INFO 30700 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T16:50:50.598+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T16:50:50.617+05:30  INFO 30700 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T16:55:53.810+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T16:55:53.841+05:30  INFO 30700 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T16:56:02.090+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T16:56:02.098+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T16:56:07.585+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T16:56:07.616+05:30  INFO 30700 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T17:16:08.660+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T17:16:08.677+05:30  INFO 30700 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T17:18:16.463+05:30  INFO 30700 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06T17:18:16.484+05:30  INFO 30700 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-06T17:18:16.491+05:30  INFO 30700 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-06T17:18:24.083+05:30  INFO 31108 --- [main] c.I.p.PersonalFinanceTrackerApplication  : Starting PersonalFinanceTrackerApplication using Java 17.0.12 with PID 31108 (E:\IIT\IITProject\IITProject\personal_finance_tracker\target\classes started by TTSADMIN in E:\IIT\IITProject\IITProject\personal_finance_tracker)
+2024-09-06T17:18:24.086+05:30  INFO 31108 --- [main] c.I.p.PersonalFinanceTrackerApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-09-06T17:18:25.842+05:30  INFO 31108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-06T17:18:25.940+05:30  INFO 31108 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 3 JPA repository interfaces.
+2024-09-06T17:18:26.581+05:30  INFO 31108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-06T17:18:26.596+05:30  INFO 31108 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-06T17:18:26.596+05:30  INFO 31108 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-06T17:18:26.681+05:30  INFO 31108 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-06T17:18:26.681+05:30  INFO 31108 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2522 ms
+2024-09-06T17:18:26.834+05:30  INFO 31108 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-06T17:18:26.942+05:30  INFO 31108 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-06T17:18:27.007+05:30  INFO 31108 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-06T17:18:27.691+05:30  INFO 31108 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-06T17:18:27.767+05:30  INFO 31108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-06T17:18:28.306+05:30  INFO 31108 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2da5fdc
+2024-09-06T17:18:28.308+05:30  INFO 31108 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-06T17:18:30.018+05:30  INFO 31108 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-06T17:18:30.138+05:30  INFO 31108 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06T17:18:30.935+05:30  INFO 31108 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-06T17:18:31.658+05:30  INFO 31108 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-06T17:18:31.658+05:30  WARN 31108 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-06T17:18:33.198+05:30  INFO 31108 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-06T17:18:33.261+05:30  INFO 31108 --- [main] c.I.p.PersonalFinanceTrackerApplication  : Started PersonalFinanceTrackerApplication in 9.862 seconds (process running for 10.962)
+2024-09-06T17:18:33.744+05:30  INFO 31108 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06T17:18:33.744+05:30  INFO 31108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-06T17:18:33.752+05:30  INFO 31108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2024-09-06T17:19:41.395+05:30  WARN 31108 --- [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1451, SQLState: 23000
+2024-09-06T17:19:41.396+05:30 ERROR 31108 --- [http-nio-8080-exec-7] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+2024-09-06T17:19:41.415+05:30 ERROR 31108 --- [http-nio-8080-exec-7] c.I.p.s.category.CategoryServiceImpl     : Unexpected error occurred while deleting category: could not execute statement [Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))] [delete from categories where id=?]; SQL [delete from categories where id=?]; constraint [null]
+2024-09-06T17:20:22.736+05:30  WARN 31108 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1451, SQLState: 23000
+2024-09-06T17:20:22.737+05:30 ERROR 31108 --- [http-nio-8080-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+2024-09-06T17:20:22.745+05:30 ERROR 31108 --- [http-nio-8080-exec-1] c.I.p.s.category.CategoryServiceImpl     : Unexpected error occurred while deleting category: could not execute statement [Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))] [delete from categories where id=?]; SQL [delete from categories where id=?]; constraint [null]
+2024-09-06T17:22:58.156+05:30  WARN 31108 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1451, SQLState: 23000
+2024-09-06T17:22:58.156+05:30 ERROR 31108 --- [http-nio-8080-exec-3] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+2024-09-06T17:22:58.166+05:30 ERROR 31108 --- [http-nio-8080-exec-3] c.I.p.s.category.CategoryServiceImpl     : Unexpected error occurred while deleting category: could not execute statement [Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))] [delete from categories where id=?]; SQL [delete from categories where id=?]; constraint [null]
+2024-09-06T17:24:42.364+05:30  WARN 31108 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1451, SQLState: 23000
+2024-09-06T17:24:42.364+05:30 ERROR 31108 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+2024-09-06T17:24:42.370+05:30 ERROR 31108 --- [http-nio-8080-exec-2] c.I.p.s.category.CategoryServiceImpl     : Unexpected error occurred while deleting category: could not execute statement [Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))] [delete from categories where id=?]; SQL [delete from categories where id=?]; constraint [null]
+2024-09-06T17:24:52.339+05:30  WARN 31108 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1451, SQLState: 23000
+2024-09-06T17:24:52.339+05:30 ERROR 31108 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+2024-09-06T17:24:52.347+05:30 ERROR 31108 --- [http-nio-8080-exec-4] c.I.p.s.category.CategoryServiceImpl     : Unexpected error occurred while deleting category: could not execute statement [Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))] [delete from categories where id=?]; SQL [delete from categories where id=?]; constraint [null]
+2024-09-06T17:48:28.398+05:30  WARN 31108 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1451, SQLState: 23000
+2024-09-06T17:48:28.400+05:30 ERROR 31108 --- [http-nio-8080-exec-5] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+2024-09-06T17:48:28.405+05:30 ERROR 31108 --- [http-nio-8080-exec-5] c.I.p.s.category.CategoryServiceImpl     : Unexpected error occurred while deleting category: could not execute statement [Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))] [delete from categories where id=?]; SQL [delete from categories where id=?]; constraint [null]
+2024-09-06T17:48:37.465+05:30  INFO 31108 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T17:48:37.536+05:30  INFO 31108 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T17:48:40.148+05:30  INFO 31108 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T17:48:40.173+05:30  INFO 31108 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T17:48:41.105+05:30  INFO 31108 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T17:48:41.130+05:30  INFO 31108 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T17:52:48.409+05:30  INFO 31108 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06T17:52:48.412+05:30  INFO 31108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-06T17:52:48.429+05:30  INFO 31108 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-06T17:52:55.503+05:30  INFO 22568 --- [main] c.I.p.PersonalFinanceTrackerApplication  : Starting PersonalFinanceTrackerApplication using Java 17.0.12 with PID 22568 (E:\IIT\IITProject\IITProject\personal_finance_tracker\target\classes started by TTSADMIN in E:\IIT\IITProject\IITProject\personal_finance_tracker)
+2024-09-06T17:52:55.506+05:30  INFO 22568 --- [main] c.I.p.PersonalFinanceTrackerApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-09-06T17:52:56.629+05:30  INFO 22568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-06T17:52:56.729+05:30  INFO 22568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 3 JPA repository interfaces.
+2024-09-06T17:52:57.261+05:30  INFO 22568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-06T17:52:57.274+05:30  INFO 22568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-06T17:52:57.274+05:30  INFO 22568 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-06T17:52:57.334+05:30  INFO 22568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-06T17:52:57.335+05:30  INFO 22568 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1754 ms
+2024-09-06T17:52:57.451+05:30  INFO 22568 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-06T17:52:57.498+05:30  INFO 22568 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-06T17:52:57.531+05:30  INFO 22568 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-06T17:52:57.887+05:30  INFO 22568 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-06T17:52:57.912+05:30  INFO 22568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-06T17:52:58.200+05:30  INFO 22568 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76db9048
+2024-09-06T17:52:58.203+05:30  INFO 22568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-06T17:52:59.502+05:30  INFO 22568 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-06T17:52:59.617+05:30  INFO 22568 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06T17:53:00.104+05:30  INFO 22568 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-06T17:53:00.500+05:30  INFO 22568 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-06T17:53:00.501+05:30  WARN 22568 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-06T17:53:01.039+05:30  INFO 22568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-06T17:53:01.053+05:30  INFO 22568 --- [main] c.I.p.PersonalFinanceTrackerApplication  : Started PersonalFinanceTrackerApplication in 6.284 seconds (process running for 7.309)
+2024-09-06T18:45:54.997+05:30  INFO 22568 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06T18:45:54.998+05:30  INFO 22568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-06T18:45:55.000+05:30  INFO 22568 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-06T19:25:40.291+05:30  WARN 22568 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1451, SQLState: 23000
+2024-09-06T19:25:40.307+05:30 ERROR 22568 --- [http-nio-8080-exec-2] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+2024-09-06T19:25:40.338+05:30 ERROR 22568 --- [http-nio-8080-exec-2] c.I.p.s.category.CategoryServiceImpl     : Unexpected error occurred while deleting category: could not execute statement [Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))] [delete from categories where id=?]; SQL [delete from categories where id=?]; constraint [null]
+2024-09-06T19:33:37.572+05:30  INFO 22568 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:33:37.614+05:30  INFO 22568 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:33:43.180+05:30  INFO 22568 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 6
+2024-09-06T19:33:43.180+05:30  INFO 22568 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-10-16 to 2024-10-16
+2024-09-06T19:33:43.214+05:30  INFO 22568 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 6
+2024-09-06T19:33:43.231+05:30  INFO 22568 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:33:43.250+05:30  INFO 22568 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:35:21.118+05:30  INFO 22568 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06T19:35:21.124+05:30  INFO 22568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-06T19:35:21.130+05:30  INFO 22568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-06T19:35:25.726+05:30  INFO 23236 --- [main] c.I.p.PersonalFinanceTrackerApplication  : Starting PersonalFinanceTrackerApplication using Java 17.0.12 with PID 23236 (E:\IIT\IITProject\IITProject\personal_finance_tracker\target\classes started by TTSADMIN in E:\IIT\IITProject\IITProject\personal_finance_tracker)
+2024-09-06T19:35:25.728+05:30  INFO 23236 --- [main] c.I.p.PersonalFinanceTrackerApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-09-06T19:35:26.369+05:30  INFO 23236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-06T19:35:26.435+05:30  INFO 23236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+2024-09-06T19:35:26.835+05:30  INFO 23236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-06T19:35:26.848+05:30  INFO 23236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-06T19:35:26.848+05:30  INFO 23236 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-06T19:35:26.916+05:30  INFO 23236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-06T19:35:26.917+05:30  INFO 23236 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1132 ms
+2024-09-06T19:35:27.017+05:30  INFO 23236 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-06T19:35:27.090+05:30  INFO 23236 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-06T19:35:27.125+05:30  INFO 23236 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-06T19:35:27.367+05:30  INFO 23236 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-06T19:35:27.391+05:30  INFO 23236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-06T19:35:27.694+05:30  INFO 23236 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e606f64
+2024-09-06T19:35:27.696+05:30  INFO 23236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-06T19:35:28.580+05:30  INFO 23236 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-06T19:35:28.644+05:30  INFO 23236 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06T19:35:28.986+05:30  INFO 23236 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-06T19:35:29.272+05:30  INFO 23236 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-06T19:35:29.273+05:30  WARN 23236 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-06T19:35:29.740+05:30  INFO 23236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-06T19:35:29.751+05:30  INFO 23236 --- [main] c.I.p.PersonalFinanceTrackerApplication  : Started PersonalFinanceTrackerApplication in 4.425 seconds (process running for 5.06)
+2024-09-06T19:35:58.015+05:30  INFO 23236 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06T19:35:58.015+05:30  INFO 23236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-06T19:35:58.016+05:30  INFO 23236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-06T19:36:16.493+05:30  WARN 23236 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1451, SQLState: 23000
+2024-09-06T19:36:16.493+05:30 ERROR 23236 --- [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))
+2024-09-06T19:36:16.514+05:30 ERROR 23236 --- [http-nio-8080-exec-4] c.I.p.s.category.CategoryServiceImpl     : Unexpected error occurred while deleting category: could not execute statement [Cannot delete or update a parent row: a foreign key constraint fails (`personal_finance_tracker`.`transactions`, CONSTRAINT `FKsqqi7sneo04kast0o138h19mv` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`))] [delete from categories where id=?]; SQL [delete from categories where id=?]; constraint [null]
+2024-09-06T19:42:12.378+05:30  INFO 23236 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:42:12.412+05:30  INFO 23236 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:52:26.582+05:30  INFO 23236 --- [http-nio-8080-exec-5] c.I.p.s.category.CategoryServiceImpl     : Creating new category: hasaranga2
+2024-09-06T19:52:26.621+05:30  INFO 23236 --- [http-nio-8080-exec-5] c.I.p.s.category.CategoryServiceImpl     : Category created successfully with ID: 5
+2024-09-06T19:52:41.180+05:30  INFO 23236 --- [http-nio-8080-exec-7] c.I.p.s.category.CategoryServiceImpl     : Creating new category: hasaranga2
+2024-09-06T19:52:41.183+05:30  WARN 23236 --- [http-nio-8080-exec-7] c.I.p.s.category.CategoryServiceImpl     : Category with name 'hasaranga2' already exists.
+2024-09-06T19:53:27.013+05:30  INFO 23236 --- [http-nio-8080-exec-8] c.I.p.s.category.CategoryServiceImpl     : Creating new category: hns
+2024-09-06T19:53:27.037+05:30  INFO 23236 --- [http-nio-8080-exec-8] c.I.p.s.category.CategoryServiceImpl     : Category created successfully with ID: 6
+2024-09-06T19:54:01.037+05:30  INFO 23236 --- [http-nio-8080-exec-10] c.I.p.s.category.CategoryServiceImpl     : Creating new category: hns23
+2024-09-06T19:54:01.054+05:30  INFO 23236 --- [http-nio-8080-exec-10] c.I.p.s.category.CategoryServiceImpl     : Category created successfully with ID: 7
+2024-09-06T19:54:13.243+05:30  INFO 23236 --- [http-nio-8080-exec-2] c.I.p.s.category.CategoryServiceImpl     : Creating new category: hns235
+2024-09-06T19:54:13.258+05:30  INFO 23236 --- [http-nio-8080-exec-2] c.I.p.s.category.CategoryServiceImpl     : Category created successfully with ID: 8
+2024-09-06T19:54:28.982+05:30  INFO 23236 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:54:28.996+05:30  INFO 23236 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:54:37.204+05:30  WARN 23236 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot coerce empty String ("") to `com.IIT.personal_finance_tracker.utill.enums.TransactionCategoryType` value (but could if coercion was enabled using `CoercionConfig`)]
+2024-09-06T19:54:46.375+05:30  INFO 23236 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:54:46.391+05:30  INFO 23236 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:54:49.569+05:30  INFO 23236 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:54:49.585+05:30  INFO 23236 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:56:31.153+05:30  INFO 23236 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:56:31.165+05:30  INFO 23236 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:56:42.459+05:30  INFO 23236 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:56:42.469+05:30  INFO 23236 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:56:46.532+05:30  INFO 23236 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching transaction with ID: 6
+2024-09-06T19:56:46.544+05:30  INFO 23236 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Transaction found with ID: 6
+2024-09-06T19:58:24.599+05:30  INFO 23236 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:58:24.617+05:30  INFO 23236 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:58:29.393+05:30  INFO 23236 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Fetching transaction with ID: 6
+2024-09-06T19:58:29.393+05:30  INFO 23236 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Transaction found with ID: 6
+2024-09-06T19:59:01.822+05:30  INFO 23236 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:59:01.822+05:30  INFO 23236 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:59:08.457+05:30  INFO 23236 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching transaction with ID: 6
+2024-09-06T19:59:08.457+05:30  INFO 23236 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Transaction found with ID: 6
+2024-09-06T19:59:16.945+05:30  INFO 23236 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Fetching transaction with ID: 6
+2024-09-06T19:59:16.949+05:30  INFO 23236 --- [http-nio-8080-exec-7] c.I.p.s.t.TransactionServiceImpl         : Transaction found with ID: 6
+2024-09-06T19:59:27.568+05:30  INFO 23236 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:59:27.581+05:30  INFO 23236 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:59:31.841+05:30  INFO 23236 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:59:31.853+05:30  INFO 23236 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:59:34.393+05:30  INFO 23236 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching transaction with ID: 6
+2024-09-06T19:59:34.404+05:30  INFO 23236 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Transaction found with ID: 6
+2024-09-06T19:59:54.225+05:30  INFO 23236 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:59:54.234+05:30  INFO 23236 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T19:59:55.422+05:30  INFO 23236 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T19:59:55.433+05:30  INFO 23236 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T20:00:03.297+05:30  INFO 23236 --- [http-nio-8080-exec-8] c.I.p.service.user.UserServiceImpl       : User john_doe12 logged in successfully.
+2024-09-06T20:00:03.321+05:30  INFO 23236 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T20:00:03.330+05:30  INFO 23236 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T20:00:06.714+05:30  INFO 23236 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T20:00:06.730+05:30  INFO 23236 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T20:00:10.978+05:30  INFO 23236 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching transaction with ID: 6
+2024-09-06T20:00:10.982+05:30  INFO 23236 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Transaction found with ID: 6
+2024-09-06T20:00:17.725+05:30  INFO 23236 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T20:00:17.739+05:30  INFO 23236 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T20:00:18.826+05:30  INFO 23236 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T20:00:18.837+05:30  INFO 23236 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 15 transactions
+2024-09-06T20:00:34.337+05:30  WARN 23236 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.IIT.personal_finance_tracker.response.transaction.TransactionResponseDTO> com.IIT.personal_finance_tracker.controller.transaction.TransactionController.createTransaction(com.IIT.personal_finance_tracker.dto.transaction.TransactionDTO): [Field error in object 'transactionDTO' on field 'amount': rejected value [0]; codes [Positive.transactionDTO.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.amount,amount]; arguments []; default message [amount]]; default message [Amount must be positive.]] ]
+2024-09-06T20:00:42.211+05:30  WARN 23236 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.IIT.personal_finance_tracker.response.transaction.TransactionResponseDTO> com.IIT.personal_finance_tracker.controller.transaction.TransactionController.createTransaction(com.IIT.personal_finance_tracker.dto.transaction.TransactionDTO): [Field error in object 'transactionDTO' on field 'amount': rejected value [-1]; codes [Positive.transactionDTO.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.amount,amount]; arguments []; default message [amount]]; default message [Amount must be positive.]] ]
+2024-09-06T20:00:43.223+05:30  WARN 23236 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.IIT.personal_finance_tracker.response.transaction.TransactionResponseDTO> com.IIT.personal_finance_tracker.controller.transaction.TransactionController.createTransaction(com.IIT.personal_finance_tracker.dto.transaction.TransactionDTO): [Field error in object 'transactionDTO' on field 'amount': rejected value [-1]; codes [Positive.transactionDTO.amount,Positive.amount,Positive.java.math.BigDecimal,Positive]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.amount,amount]; arguments []; default message [amount]]; default message [Amount must be positive.]] ]
+2024-09-06T20:00:48.341+05:30  INFO 23236 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Creating new transaction: hasaranga
+2024-09-06T20:00:48.367+05:30  INFO 23236 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : TransactionController created successfully with ID: 24
+2024-09-06T20:00:48.376+05:30  INFO 23236 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T20:00:48.392+05:30  INFO 23236 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 16 transactions
+2024-09-06T20:01:22.656+05:30  INFO 23236 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T20:01:22.658+05:30  INFO 23236 --- [http-nio-8080-exec-2] c.I.p.s.t.TransactionServiceImpl         : Found 16 transactions

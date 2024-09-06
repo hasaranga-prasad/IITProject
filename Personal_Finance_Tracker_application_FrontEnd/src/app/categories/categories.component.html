@@ -1,0 +1,100 @@
+<div class="container">
+  <div *ngIf="errorMessage" class="error-message">
+    <p>{{ errorMessage }}</p>
+  </div>
+
+ <div class="date-filter">
+  <button (click)="showCreateDialog()">Create New Category</button>
+</div>
+<div class="search-filter">
+  <label for="searchTerm">Search:</label>
+  <input id="searchTerm" type="text" [(ngModel)]="searchTerm" (ngModelChange)="searchCatagories()" placeholder="Search transactions..." />
+</div>
+<table class="transactions-table" *ngIf="filteredCatagories.length > 0; else noData">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Type</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let categories of paginatedCatagories">
+      <td>{{ categories.id }}</td>
+      <td>{{ categories.name }}</td>
+      <td>{{ categories.type}}</td>
+      
+      <td>
+        <button (click)="onEdit(categories)" class="edit-button">Edit</button>
+        <button (click)="onDelete(categories.id)" class="delete-button">Delete</button>
+      </td>
+      
+    </tr>
+  </tbody>
+</table>
+<ng-template #noData>
+  <div class="no-data">
+    <p>No  Categories available.</p>
+  </div>
+</ng-template>
+<div class="pagination-controls">
+  <label for="itemsPerPage">Items per page:</label>
+  <select id="itemsPerPage" [(ngModel)]="itemsPerPage" (change)="onItemsPerPageChange(itemsPerPage)">
+    <option [value]="5">5</option>
+    <option [value]="10">10</option>
+    <option [value]="15">15</option>
+  </select>
+
+  <button (click)="onPageChange(1)" [disabled]="currentPage === 1">First</button>
+  <button (click)="onPageChange(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+  <span>Page {{ currentPage }} of {{ totalPages }}</span>
+  <button (click)="onPageChange(currentPage + 1)" [disabled]="currentPage >= totalPages">Next</button>
+  <button (click)="onPageChange(totalPages)" [disabled]="currentPage >= totalPages">Last</button>
+</div>
+<div class="dialog" [ngClass]="{'is-active': dialogVisible}">
+  <div class="dialog-content">
+    <div *ngIf="catagories1">
+      <h3>Edit Category</h3>
+      <form (ngSubmit)="onSave()">
+        
+        <div class="form-group">
+          <label for="description">Name:</label>
+          <input id="description" type="text" [(ngModel)]="catagories1.name" name="description" required />
+       </div>
+        <div class="form-group">
+          <label for="type">Type:</label>
+          <select id="type" [(ngModel)]="catagories1.type" name="type" required>
+            <option value="INCOME">INCOME</option>
+            <option value="EXPENSE">EXPENSE</option>
+          </select>
+        </div>
+         <button type="submit" class="dialog-save">Save</button>
+      </form>
+    </div>
+    <button class="dialog-close" (click)="onCloseDialog()">Close</button>
+  </div>
+  </div>
+
+
+
+<div class="dialog" [ngClass]="{'is-active': createDialogVisible}">
+  <div class="dialog-content">
+    <h3>Create Category</h3>
+    <form (ngSubmit)="onCreate()">
+      <div class="form-group">
+        <label for="newDescription">Name:</label>
+        <input id="newDescription" type="text" [(ngModel)]="newcatagories.name" name="description" required />
+      </div>
+      <div class="form-group">
+        <label for="newType">Type:</label>
+        <select id="newType" [(ngModel)]="newcatagories.type" name="type" required>
+          <option value="INCOME">INCOME</option>
+          <option value="EXPENSE">EXPENSE</option>
+        </select>
+      </div>
+      <button type="submit" class="dialog-save">Save</button>
+    </form>
+    <button class="dialog-close" (click)="onCloseCreateDialog()">Close</button>
+  </div>
+</div>

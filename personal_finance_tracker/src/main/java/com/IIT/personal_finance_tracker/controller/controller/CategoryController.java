@@ -1,10 +1,9 @@
 package com.IIT.personal_finance_tracker.controller.controller;
-
-
 import com.IIT.personal_finance_tracker.dto.category.CategoryDTO;
 import com.IIT.personal_finance_tracker.response.category.CategoryResponseDTO;
 import com.IIT.personal_finance_tracker.service.category.CategoryService;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -18,7 +17,7 @@ public class CategoryController {
     }
 
     @PostMapping("/create")
-    public ResponseEntity<CategoryResponseDTO> createCategory(@RequestBody CategoryDTO categoryDTO) {
+    public ResponseEntity<CategoryResponseDTO> createCategory(@RequestBody @Validated CategoryDTO categoryDTO) {
         CategoryResponseDTO response = categoryService.createCategory(categoryDTO);
         return ResponseEntity.status(response.getStatusCode()).body(response);
     }
@@ -29,13 +28,13 @@ public class CategoryController {
         return ResponseEntity.status(response.getStatusCode()).body(response);
     }
 
-    @PutMapping("/{id}/update")
+    @PutMapping("/update/{id}")
     public ResponseEntity<CategoryResponseDTO> updateCategory(@PathVariable Long id, @RequestBody CategoryDTO categoryDTO) {
         CategoryResponseDTO response = categoryService.updateCategory(id, categoryDTO);
         return ResponseEntity.status(response.getStatusCode()).body(response);
     }
 
-    @DeleteMapping("/{id}/delete")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<CategoryResponseDTO> deleteCategory(@PathVariable Long id) {
         CategoryResponseDTO response = categoryService.deleteCategory(id);
         return ResponseEntity.status(response.getStatusCode()).body(response);

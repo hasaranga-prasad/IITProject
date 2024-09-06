@@ -32,7 +32,7 @@ public class CategoryServiceImpl implements CategoryService {
 
             if (categoryDTO.getName() == null || categoryDTO.getName().trim().isEmpty()) {
                 logger.warn("Category name is missing or empty.");
-                response.setStatusCode(400);  // Bad Request
+                response.setStatusCode(400);
                 response.setError("Invalid Input");
                 response.setMessage("Category name is required.");
                 return response;
@@ -41,7 +41,7 @@ public class CategoryServiceImpl implements CategoryService {
 
             if (categoryDTO.getType() == null) {
                 logger.warn("Category type is missing.");
-                response.setStatusCode(400);  // Bad Request
+                response.setStatusCode(400);
                 response.setError("Invalid Input");
                 response.setMessage("Category type is required.");
                 return response;
@@ -116,7 +116,9 @@ public class CategoryServiceImpl implements CategoryService {
             if (existingCategoryOptional.isPresent()) {
                 Category existingCategory = existingCategoryOptional.get();
 
-
+                if (categoryDTO.getType() != null) {
+                    existingCategory.setType(categoryDTO.getType());
+                }
                 if (categoryDTO.getName() != null && !categoryDTO.getName().trim().isEmpty()) {
                     existingCategory.setName(categoryDTO.getName());
                 }
@@ -184,7 +186,7 @@ public class CategoryServiceImpl implements CategoryService {
             }
         } catch (Exception e) {
             logger.error("Unexpected error occurred while fetching all categories: {}", e.getMessage());
-            response.setStatusCode(500);  // Internal Server Error
+            response.setStatusCode(500);
             response.setError("Server error");
             response.setMessage("An unexpected error occurred while fetching the categories");
         }

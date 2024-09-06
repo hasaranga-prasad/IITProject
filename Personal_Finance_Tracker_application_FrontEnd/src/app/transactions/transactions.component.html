@@ -3,7 +3,28 @@
       <p>{{ errorMessage }}</p>
     </div>
   
-    <table class="transactions-table">
+   <div class="date-filter">
+    <button (click)="showCreateDialog()">Create New Transaction</button>
+  </div>
+    <div class="date-filter">
+      <label for="startDate">Start Date:</label>
+      <input id="startDate" type="date" [(ngModel)]="filter.startDate" />
+  
+      <label for="endDate">End Date:</label>
+      <input id="endDate" type="date" [(ngModel)]="filter.endDate" />
+  
+      <button (click)="filterByDateRange()">Filter</button>
+      <button (click)="onReset()">Reset</button>
+    </div>
+  
+    
+    <div class="search-filter">
+      <label for="searchTerm">Search:</label>
+      <input id="searchTerm" type="text" [(ngModel)]="searchTerm" (ngModelChange)="searchTransactions()" placeholder="Search transactions..." />
+    </div>
+  
+   
+    <table class="transactions-table" *ngIf="filteredTransactions.length > 0; else noData">
       <thead>
         <tr>
           <th>ID</th>
@@ -24,13 +45,22 @@
           <td>{{ transaction.type }}</td>
           <td>{{ transaction.category.name }}</td>
           <td>
-            <button (click)="onEdit(transaction)">Edit</button>
-            <button (click)="onDelete(transaction.id)">Delete</button>
+            <button (click)="onEdit(transaction)" class="edit-button">Edit</button>
+            <button (click)="onDelete(transaction.id)" class="delete-button">Delete</button>
           </td>
+          
         </tr>
       </tbody>
     </table>
   
+   
+    <ng-template #noData>
+      <div class="no-data">
+        <p>No transactions available.</p>
+      </div>
+    </ng-template>
+  
+    
     <div class="pagination-controls">
       <label for="itemsPerPage">Items per page:</label>
       <select id="itemsPerPage" [(ngModel)]="itemsPerPage" (change)="onItemsPerPageChange(itemsPerPage)">
@@ -46,35 +76,83 @@
       <button (click)="onPageChange(totalPages)" [disabled]="currentPage >= totalPages">Last</button>
     </div>
   
+   
     <div class="dialog" [ngClass]="{'is-active': dialogVisible}">
-        <div class="dialog-content">
-          <div *ngIf="transaction1">
-            <h3>Edit Transaction</h3>
-            <form (ngSubmit)="onSave()">
-              <div class="form-group">
-                <label for="amount">Amount:</label>
-                <input id="amount" type="number" [(ngModel)]="transaction1.amount" name="amount" required />
-              </div>
-              <div class="form-group">
-                <label for="description">Description:</label>
-                <input id="description" type="text" [(ngModel)]="transaction1.description" name="description" required />
-              </div>
-              <div class="form-group">
-                <label for="transactionDate">Date:</label>
-                <input id="transactionDate" type="date" [(ngModel)]="transaction1.transactionDate" name="transactionDate" required />
-              </div>
-              <div class="form-group">
-                <label for="type">Type:</label>
-                <input id="type" type="text" [(ngModel)]="transaction1.type" name="type" required />
-              </div>
-              <div class="form-group">
-                <label for="category">Category:</label>
-                <input id="category" type="text" [(ngModel)]="transaction1.category.name" name="category" required />
-              </div>
-              <button type="submit" class="dialog-save">Save</button>
-            </form>
-          </div>
-          <button class="dialog-close" (click)="onCloseDialog()">Close</button>
+      <div class="dialog-content">
+        <div *ngIf="transaction1">
+          <h3>Edit Transaction</h3>
+          <form (ngSubmit)="onSave()">
+            <div class="form-group">
+              <label for="amount">Amount:</label>
+              <input id="amount" type="number" [(ngModel)]="transaction1.amount" name="amount" required />
+            </div>
+            <div class="form-group">
+              <label for="description">Description:</label>
+              <input id="description" type="text" [(ngModel)]="transaction1.description" name="description" required />
+            </div>
+            <div class="form-group">
+              <label for="transactionDate">Date:</label>
+              <input id="transactionDate" type="date" [(ngModel)]="transaction1.transactionDate" name="transactionDate" required />
+            </div>
+            <div class="form-group">
+              <label for="type">Type:</label>
+              <select id="type" [(ngModel)]="transaction1.type" name="type" required>
+                <option value="INCOME">INCOME</option>
+                <option value="EXPENSE">EXPENSE</option>
+              </select>
+            </div>
+  
+            <div class="form-group">
+              <label for="categoryId">Category:</label>
+              <select id="categoryId" [(ngModel)]="transaction1.category.id" name="categoryId" required>
+                <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+              </select>
+            </div>
+  
+            <button type="submit" class="dialog-save">Save</button>
+          </form>
         </div>
+        <button class="dialog-close" (click)="onCloseDialog()">Close</button>
       </div>
-      
+    </div>
+  
+
+    <div class="dialog" [ngClass]="{'is-active': createDialogVisible}">
+      <div class="dialog-content">
+        <h3>Create Transaction</h3>
+        <form (ngSubmit)="onCreate()">
+          <div class="form-group">
+            <label for="newAmount">Amount:</label>
+            <input id="newAmount" type="number" [(ngModel)]="newTransaction.amount" name="amount" required />
+          </div>
+          <div class="form-group">
+            <label for="newDescription">Description:</label>
+            <input id="newDescription" type="text" [(ngModel)]="newTransaction.description" name="description" required />
+          </div>
+          <div class="form-group">
+            <label for="newTransactionDate">Date:</label>
+            <input id="newTransactionDate" type="date" [(ngModel)]="newTransaction.transactionDate" name="transactionDate" required />
+          </div>
+          <div class="form-group">
+            <label for="newType">Type:</label>
+            <select id="newType" [(ngModel)]="newTransaction.type" name="type" required>
+              <option value="INCOME">INCOME</option>
+              <option value="EXPENSE">EXPENSE</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <label for="newCategoryId">Category:</label>
+            <select id="newCategoryId" [(ngModel)]="newTransaction.categoryId" name="categoryId" required>
+              <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+            </select>
+          </div>
+  
+          <button type="submit" class="dialog-save">Save</button>
+        </form>
+        <button class="dialog-close" (click)="onCloseCreateDialog()">Close</button>
+      </div>
+    </div>
+  </div>
+  
+  

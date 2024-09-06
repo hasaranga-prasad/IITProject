@@ -34,6 +34,20 @@ export class UsersService {
     }
   }
 
+  
+  async transactionCreate(transactionData:any,token:string):Promise<any>{
+    const url = `${this.BASE_URL}/user/transactions/create`;
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    })
+   try{
+      const response =  this.http.post<any>(url, transactionData,{headers}).toPromise()
+      return response;
+    }catch(error){
+      throw error;
+    }
+  }
+
   async deleteTransaction(id: string, token:string):Promise<any>{
     const url = `${this.BASE_URL}/user/transactions/delete/${id}`;
     const headers = new HttpHeaders({
@@ -86,8 +100,33 @@ export class UsersService {
       throw error;
     }
   }
+  async getCategoryById(Id: string, token:string):Promise<any>{
+    const url = `${this.BASE_URL}/user/category/${Id}`;
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    })
+    try{
+      const response =  this.http.get<any>(url, {headers}).toPromise()
+      return response;
+    }catch(error){
+      throw error;
+    }
+  }
   async getAllTransaction(token: string): Promise<any> {
     const url = `${this.BASE_URL}/user/transactions/all`;
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${token}`,
+    });
+
+    try {
+      const response = await this.http.get<any>(url, { headers }).toPromise();
+      return response;
+    } catch (error) {
+      throw error;
+    }
+  }
+  async getAllCategories(token: string): Promise<any> {
+    const url = `${this.BASE_URL}/user/category/all`;
     const headers = new HttpHeaders({
       Authorization: `Bearer ${token}`,
     });
@@ -112,8 +151,42 @@ export class UsersService {
       throw error;
     }
   }
- 
-
+  async deleteCategory(id: string, token:string):Promise<any>{
+    const url = `${this.BASE_URL}/user/category/delete/${id}`;
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    })
+    try{
+      const response =  this.http.delete<any>(url, {headers}).toPromise()
+      return response;
+    }catch(error){
+      throw error;
+    }
+  }
+  async updateCategory(id: string, userData: any, token:string):Promise<any>{
+    const url = `${this.BASE_URL}/user/category/update/${id}`;
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    })
+    try{
+      const response =  this.http.put<any>(url, userData, {headers}).toPromise()
+      return response;
+    }catch(error){
+      throw error;
+    }
+  }
+  async categoryCreate(transactionData:any,token:string):Promise<any>{
+    const url = `${this.BASE_URL}/user/category/create`;
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${token}`
+    })
+   try{
+      const response =  this.http.post<any>(url, transactionData,{headers}).toPromise()
+      return response;
+    }catch(error){
+      throw error;
+    }
+  }
   /***AUTHEMNTICATION METHODS */
   logOut():void{
     if(typeof localStorage !== 'undefined'){

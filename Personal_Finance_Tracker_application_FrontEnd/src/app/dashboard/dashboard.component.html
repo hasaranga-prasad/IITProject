@@ -61,7 +61,6 @@
     <button (click)="onPageChange(totalPages)" [disabled]="currentPage >= totalPages">Last</button>
   </div>
 
-  <!-- Modal -->
   <div class="modal" [ngClass]="{'is-active': visible}">
     <div class="modal-background"></div>
     <div class="modal-content">
@@ -74,7 +73,7 @@
         <p><strong>Type:</strong> {{ transaction1.type }}</p>
         <p><strong>Category:</strong> {{ transaction1.category.name }}</p>
       </div>
+      <button class="modal-close" (click)="onCloseDialog()">Close</button>
     </div>
-    <button class="modal-close" (click)="onCloseDialog()">Close</button>
   </div>
-</div>
+  
