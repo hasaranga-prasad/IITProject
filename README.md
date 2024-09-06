@@ -21,3 +21,16 @@ logging.file.name=logs/myapp.log
 
 # FrontEnd Angular
 #JWT Using for UserManagements
+
+
+To start an existing Angular project and install the necessary Node modules, follow these steps:
+
+1.Navigate to the Project Directory: Open a terminal or command prompt, and navigate to the root directory of your Angular project where the package.json file is located.
+#cd path/to/your-angular-project
+2Install Node Modules: Run the following command to install the required packages (from package.json):
+#npm install
+3Start the Angular Development Server: Once the installation is complete, start the development server with this command:
+#ng serve
+Open in Browser: Open your browser and visit the local development server:
+#http://localhost:4200
+
