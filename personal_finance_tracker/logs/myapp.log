@@ -2120,3 +2120,76 @@ java.sql.SQLSyntaxErrorException: Unknown database 'personal_finance_tracker'
 2024-09-06T20:58:46.884+05:30  INFO 30024 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
 2024-09-06T20:58:51.186+05:30  INFO 30024 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
 2024-09-06T20:58:51.200+05:30  INFO 30024 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T20:59:51.420+05:30  INFO 30024 --- [http-nio-8080-exec-2] c.I.p.service.user.UserServiceImpl       : User john_doe12 logged in successfully.
+2024-09-06T20:59:51.445+05:30  INFO 30024 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T20:59:51.459+05:30  INFO 30024 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T20:59:57.261+05:30  INFO 30024 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T20:59:57.269+05:30  INFO 30024 --- [http-nio-8080-exec-8] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T21:00:27.351+05:30  INFO 30024 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T21:00:27.360+05:30  INFO 30024 --- [http-nio-8080-exec-6] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T21:00:28.784+05:30  INFO 30024 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T21:00:28.800+05:30  INFO 30024 --- [http-nio-8080-exec-9] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T21:00:57.869+05:30  INFO 30024 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T21:00:57.881+05:30  INFO 30024 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T21:01:06.360+05:30  WARN 30024 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.IIT.personal_finance_tracker.response.transaction.TransactionResponseDTO> com.IIT.personal_finance_tracker.controller.transaction.TransactionController.updateTransaction(java.lang.Long,com.IIT.personal_finance_tracker.dto.transaction.TransactionDTO): [Field error in object 'transactionDTO' on field 'description': rejected value []; codes [Size.transactionDTO.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.description,description]; arguments []; default message [description],2147483647,1]; default message [Description must not be empty.]] ]
+2024-09-06T21:01:25.294+05:30  WARN 30024 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.IIT.personal_finance_tracker.response.transaction.TransactionResponseDTO> com.IIT.personal_finance_tracker.controller.transaction.TransactionController.createTransaction(com.IIT.personal_finance_tracker.dto.transaction.TransactionDTO): [Field error in object 'transactionDTO' on field 'description': rejected value []; codes [Size.transactionDTO.description,Size.description,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [transactionDTO.description,description]; arguments []; default message [description],2147483647,1]; default message [Description must not be empty.]] ]
+2024-09-06T21:08:56.492+05:30  INFO 30024 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06T21:08:56.494+05:30  INFO 30024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-06T21:08:56.501+05:30  INFO 30024 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-06T21:09:00.142+05:30  INFO 30568 --- [main] c.I.p.PersonalFinanceTrackerApplication  : Starting PersonalFinanceTrackerApplication using Java 17.0.12 with PID 30568 (E:\IIT\IITProject\IITProject\personal_finance_tracker\target\classes started by TTSADMIN in E:\IIT\IITProject\IITProject\personal_finance_tracker)
+2024-09-06T21:09:00.145+05:30  INFO 30568 --- [main] c.I.p.PersonalFinanceTrackerApplication  : No active profile set, falling back to 1 default profile: "default"
+2024-09-06T21:09:00.690+05:30  INFO 30568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-06T21:09:00.749+05:30  INFO 30568 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+2024-09-06T21:09:01.128+05:30  INFO 30568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-06T21:09:01.137+05:30  INFO 30568 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-06T21:09:01.137+05:30  INFO 30568 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-06T21:09:01.196+05:30  INFO 30568 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-06T21:09:01.197+05:30  INFO 30568 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1008 ms
+2024-09-06T21:09:01.271+05:30  INFO 30568 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-06T21:09:01.301+05:30  INFO 30568 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-06T21:09:01.325+05:30  INFO 30568 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-06T21:09:01.494+05:30  INFO 30568 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-06T21:09:01.509+05:30  INFO 30568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-06T21:09:01.712+05:30  INFO 30568 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@460f1cdb
+2024-09-06T21:09:01.714+05:30  INFO 30568 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-06T21:09:02.382+05:30  INFO 30568 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-06T21:09:02.432+05:30  INFO 30568 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06T21:09:02.681+05:30  INFO 30568 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-06T21:09:02.925+05:30  INFO 30568 --- [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-09-06T21:09:02.926+05:30  WARN 30568 --- [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-09-06T21:09:03.300+05:30  INFO 30568 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-06T21:09:03.308+05:30  INFO 30568 --- [main] c.I.p.PersonalFinanceTrackerApplication  : Started PersonalFinanceTrackerApplication in 3.525 seconds (process running for 4.065)
+2024-09-06T21:10:03.426+05:30  INFO 30568 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-06T21:10:03.426+05:30  INFO 30568 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-06T21:10:03.426+05:30  INFO 30568 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-09-06T21:10:03.744+05:30  INFO 30568 --- [http-nio-8080-exec-1] c.I.p.service.user.UserServiceImpl       : Starting user creation process for username: john_doe12
+2024-09-06T21:10:03.875+05:30  WARN 30568 --- [http-nio-8080-exec-1] c.I.p.service.user.UserServiceImpl       : Username already exists: john_doe12
+2024-09-06T21:10:10.450+05:30  INFO 30568 --- [http-nio-8080-exec-3] c.I.p.service.user.UserServiceImpl       : Starting user creation process for username: john_doe123
+2024-09-06T21:10:10.692+05:30  INFO 30568 --- [http-nio-8080-exec-3] c.I.p.service.user.UserServiceImpl       : User created successfully with ID: 3
+2024-09-06T21:10:32.064+05:30  INFO 30568 --- [http-nio-8080-exec-4] c.I.p.service.user.UserServiceImpl       : Starting user creation process for username: john_doe123
+2024-09-06T21:10:32.067+05:30  WARN 30568 --- [http-nio-8080-exec-4] c.I.p.service.user.UserServiceImpl       : Username already exists: john_doe123
+2024-09-06T21:10:38.170+05:30  INFO 30568 --- [http-nio-8080-exec-5] c.I.p.service.user.UserServiceImpl       : Starting user creation process for username: john_doe1234
+2024-09-06T21:10:38.180+05:30  WARN 30568 --- [http-nio-8080-exec-5] c.I.p.service.user.UserServiceImpl       : Email already exists: johneke.doe@example.com
+2024-09-06T21:10:48.855+05:30  INFO 30568 --- [http-nio-8080-exec-6] c.I.p.service.user.UserServiceImpl       : Starting user creation process for username: john_doe1234
+2024-09-06T21:10:49.010+05:30  INFO 30568 --- [http-nio-8080-exec-6] c.I.p.service.user.UserServiceImpl       : User created successfully with ID: 4
+2024-09-06T21:13:36.673+05:30  INFO 30568 --- [http-nio-8080-exec-8] c.I.p.service.user.UserServiceImpl       : Starting user creation process for username: john_doe12345
+2024-09-06T21:13:36.820+05:30  INFO 30568 --- [http-nio-8080-exec-8] c.I.p.service.user.UserServiceImpl       : User created successfully with ID: 5
+2024-09-06T21:13:53.126+05:30  INFO 30568 --- [http-nio-8080-exec-10] c.I.p.service.user.UserServiceImpl       : User john_doe12345 logged in successfully.
+2024-09-06T21:13:53.276+05:30  INFO 30568 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T21:13:53.339+05:30  INFO 30568 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T21:14:23.371+05:30  INFO 30568 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T21:14:23.390+05:30  INFO 30568 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T21:14:26.292+05:30  INFO 30568 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T21:14:26.316+05:30  INFO 30568 --- [http-nio-8080-exec-4] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T21:14:38.229+05:30  INFO 30568 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T21:14:38.242+05:30  INFO 30568 --- [http-nio-8080-exec-10] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T21:14:44.807+05:30  INFO 30568 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Updating transaction with ID: 3
+2024-09-06T21:14:44.817+05:30  INFO 30568 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Updating transaction date from 2024-09-19 to 2024-09-19
+2024-09-06T21:14:44.834+05:30  INFO 30568 --- [http-nio-8080-exec-1] c.I.p.s.t.TransactionServiceImpl         : Transaction updated successfully with ID: 3
+2024-09-06T21:14:44.853+05:30  INFO 30568 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T21:14:44.868+05:30  INFO 30568 --- [http-nio-8080-exec-3] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T21:14:48.019+05:30  INFO 30568 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Fetching all transactions
+2024-09-06T21:14:48.035+05:30  INFO 30568 --- [http-nio-8080-exec-5] c.I.p.s.t.TransactionServiceImpl         : Found 1 transactions
+2024-09-06T21:15:01.794+05:30  INFO 30568 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-06T21:15:01.799+05:30  INFO 30568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-06T21:15:01.805+05:30  INFO 30568 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
