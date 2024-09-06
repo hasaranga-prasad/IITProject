@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { CurrencyPipe, DatePipe } from '@angular/common';  
-import { CommonModule } from '@angular/common';  
-import { FormsModule } from '@angular/forms';  // Import FormsModule
+import { CurrencyPipe, DatePipe } from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { UsersService } from '../users.service';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr'; 
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, FormsModule, CurrencyPipe, DatePipe],  // Add FormsModule to imports
+  imports: [CommonModule, FormsModule, CurrencyPipe, DatePipe],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.scss']
 })
@@ -21,12 +22,13 @@ export class DashboardComponent implements OnInit {
   transaction1: any;
 
   currentPage: number = 1;
-  itemsPerPage: number = 5; 
+  itemsPerPage: number = 5;
   totalItems: number = 0;
 
   constructor(
     private readonly userService: UsersService,
-    private readonly router: Router
+    private readonly router: Router,
+    private toastr: ToastrService 
   ) {}
 
   ngOnInit(): void {
@@ -42,15 +44,15 @@ export class DashboardComponent implements OnInit {
           this.transactions = response.transactionList;
           this.amountOfIncome = response.amountofIncome;
           this.amountOfExpense = response.amountofExpense;
-          this.totalItems = parseInt(response.size, 10); // Parse size as an integer
+          this.totalItems = parseInt(response.size, 10);
         } else {
-          console.log('No transactions found.');
+          this.toastr.warning('No transactions found.');
         }
       } else {
-        console.log('Token is missing.');
+        this.toastr.error('Token is missing.');
       }
     } catch (error: any) {
-      console.log(error.message || 'An error occurred while fetching transactions.');
+      this.toastr.error( 'An error occurred while fetching transactions.');
     }
   }
 
@@ -75,7 +77,7 @@ export class DashboardComponent implements OnInit {
 
   onItemsPerPageChange(items: number) {
     this.itemsPerPage = items;
-    this.currentPage = 1; // Reset to first page
+    this.currentPage = 1;
   }
 
   showDialog() {
@@ -87,7 +89,7 @@ export class DashboardComponent implements OnInit {
     const Id = localStorage.getItem('selectedTransactionId');
     const token = localStorage.getItem('token');
     if (!Id || !token) {
-      this.errorMessage = "Transaction ID or Token is required";
+      this.toastr.error('Transaction ID or Token is required');
       return;
     }
 
@@ -95,11 +97,12 @@ export class DashboardComponent implements OnInit {
       const transactionDataResponse = await this.userService.getTransactionById(Id, token);
       if (transactionDataResponse && transactionDataResponse.statusCode === 200) {
         this.transaction1 = transactionDataResponse.transaction;
+        this.toastr.success('Transaction details fetched successfully.');
       } else {
-        this.errorMessage = 'Failed to fetch transaction details.';
+        this.toastr.error('Failed to fetch transaction details.');
       }
     } catch (error: any) {
-      this.errorMessage = error.message || 'An error occurred while fetching transaction details.';
+      this.toastr.error( 'An error occurred while fetching transaction details.');
     }
   }
 
