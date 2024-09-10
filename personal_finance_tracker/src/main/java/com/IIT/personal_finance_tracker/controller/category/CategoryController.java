@@ -1,4 +1,4 @@
-package com.IIT.personal_finance_tracker.controller.controller;
+package com.IIT.personal_finance_tracker.controller.category;
 import com.IIT.personal_finance_tracker.dto.category.CategoryDTO;
 import com.IIT.personal_finance_tracker.response.category.CategoryResponseDTO;
 import com.IIT.personal_finance_tracker.service.category.CategoryService;
